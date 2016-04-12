@@ -38,13 +38,13 @@ The natural tendency is to wrap the entire link inside of a permission like so:
 and although this allows us to view and edit the text when logged in as a bplead, in this case we are logged in as user Vicky,
 
 ![Image 1 of artifact 2]
-(https://github.com/jonesj38/laravel-acl/blob/blogs/tutorialPR.png?raw=true)
+(https://github.com/jonesj38/laravel-acl/blob/blogs/blog2p1and3.png)
 
 
 this hides the text behind the bplead permission and renders it invisible to non-bplead users.
 
 ![Image 2 of artifact 2]
-(https://github.com/jonesj38/laravel-acl/blob/blogs/tutorialPR.png?raw=true)
+(https://github.com/jonesj38/laravel-acl/blob/blogs/blog2p2.png)
 
 You can give a link a permission while at the same time allowing the text and the html to stay visible to non-permitted users and 
 continue to work properly, e.g.
@@ -57,14 +57,14 @@ When we're logged in as Vicky, it allows us to see and edit the success measure.
 
 
 ![Image 3 of artifact 2]
-(https://github.com/jonesj38/laravel-acl/blob/blogs/tutorialPR.png?raw=true)
+(https://github.com/jonesj38/laravel-acl/blob/blogs/blog2p1and3.png)
 
 
 When we're logged out and simply viewing the business plan as a read-only user the success measure is no longer editable, i.e. the link is no longer active, but it is still
 visible and this is what we want.
 
 ![Image 4 of artifact 2]
-(https://github.com/jonesj38/laravel-acl/blob/blogs/tutorialPR.png?raw=true)
+(https://github.com/jonesj38/laravel-acl/blob/blogs/blog2p4.png)
 
 
 The reason for this has to do with the precedence with which the html code and Kodeine/Laravel-ACL blade directives are compiled; html first, followed by the blade directives. In other words, the code within the blade directives is still part of the rest of the page and
