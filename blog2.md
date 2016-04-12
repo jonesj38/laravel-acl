@@ -77,4 +77,5 @@ This is just one example of the powerful malleability that Kodeine/Laravel-ACL b
 
 Cheers!
 and happy coding
+
 jonesj38
